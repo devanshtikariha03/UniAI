@@ -96,7 +96,9 @@ export function NetworkingJobs() {
                         <div className="mb-2 flex items-center gap-2">
                           <h4 className="text-h3">{job.title}</h4>
                           {job.verified && (
-                            <CheckCircle className="h-5 w-5 text-green-500" title="Verified company" />
+                            <span title="Verified company">
+                              <CheckCircle className="h-5 w-5 text-green-500" />
+                            </span>
                           )}
                         </div>
                         <p className="text-body mb-2 font-medium">{job.company}</p>
