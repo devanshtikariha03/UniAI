@@ -7,11 +7,13 @@ interface CardProps {
   className?: string;
   hover?: boolean;
   onClick?: () => void;
+  id?: string;
 }
 
-export function Card({ children, className, hover = false, onClick }: CardProps) {
+export function Card({ children, className, hover = false, onClick, id }: CardProps) {
   return (
     <motion.div
+      id={id}
       whileHover={
         hover
           ? {
